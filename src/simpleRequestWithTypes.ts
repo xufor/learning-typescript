@@ -16,7 +16,7 @@ async function getDataFromAPI(url: string): Promise<any> {
 async function fetchAndPrintData(url: string) {
   for (let i: number = 1; i <= 5; i++) {
     const response: APIResponse = await getDataFromAPI(url + i);
-    console.log(response)
+    console.log(response);
   }
 }
 

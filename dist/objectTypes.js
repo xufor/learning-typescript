@@ -20,11 +20,11 @@ eat({
   quantity: 7
 });
 */
-eat({ quantity: 5, foodName: 'samosa' }); // everything good!
+eat({ quantity: 5, foodName: "samosa" }); // everything good!
 // if we really want to give something extra, then do this
 const ninjaFood = {
     quantity: 5,
-    foodName: 'dumplings',
-    village: 'leaf village'
+    foodName: "dumplings",
+    village: "leaf village",
 };
 eat(ninjaFood); // now no errors - WAT!
