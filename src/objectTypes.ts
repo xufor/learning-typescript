@@ -10,21 +10,11 @@ function eat(food: { quantity: number; foodName: string }) {
   console.log(`I ate ${food.quantity} ${food.foodName}.`);
 }
 
-/*
-TS is upset here coz it didn't expect us to provide the property pricePerUnit.
+// TS is upset here coz it didn't expect us to provide the property pricePerUnit.
+// eat({ quantity: 20, pricePerUnit: 10 });
 
-eat({
-  pricePerUnit: 10,
-})
-*/
-
-/*
-TS is upset here coz it didn't expect us to provide the property pricePerUnit.
-
-eat({
-  quantity: 7
-});
-*/
+// TS is upset here coz it expects us to provide the property foodName.
+// eat({ quantity: 7 });
 
 eat({ quantity: 5, foodName: "samosa" }); // everything good!
 
