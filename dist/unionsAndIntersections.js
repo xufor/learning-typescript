@@ -25,6 +25,7 @@ if (data[0] == "error") {
     // so instead of showing the common props from Error and Data we can see all three propeties of interface Error
     console.log(`${data[1].name} ${data[1].message} \n${data[1].stack}`);
 }
+// Long Story Short: Allow only when all the properties from all participating types are present.
 function giveFruitIntersection() {
     // this does not work!
     // return {
@@ -48,6 +49,7 @@ function giveFruitIntersection() {
         supplier: "fresh farm ltd.",
     };
 }
+// Long Story Short: Allow only when all the properties from atleast one of the participating types is present.
 function giveFruitUnion() {
     // this does not work!
     // return {};

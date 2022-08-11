@@ -45,6 +45,7 @@ interface StoreItem {
   supplier: string;
 }
 
+// Long Story Short: Allow only when all the properties from all participating types are present.
 function giveFruitIntersection(): Fruit & StoreItem {
   // this does not work!
   // return {
@@ -72,10 +73,11 @@ function giveFruitIntersection(): Fruit & StoreItem {
   };
 }
 
+// Long Story Short: Allow only when all the properties from atleast one of the participating types is present.
 function giveFruitUnion(): Fruit | StoreItem {
   // this does not work!
   // return {};
-  
+
   // this does not work!
   // return {
   //   pricePerUnit: 20;
