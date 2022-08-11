@@ -25,3 +25,63 @@ if (data[0] == "error") {
     // so instead of showing the common props from Error and Data we can see all three propeties of interface Error
     console.log(`${data[1].name} ${data[1].message} \n${data[1].stack}`);
 }
+function giveFruitIntersection() {
+    // this does not work!
+    // return {
+    //   pricePerUnit: 15,
+    //   name: "apple",
+    //   arrivalDate: new Date(),
+    // };
+    // this does not work!
+    // return {
+    //   name: "apple",
+    //   arrivalDate: new Date(),
+    //   supplier: "fresh farm ltd.",
+    // };
+    // this does not work!
+    // return {};
+    // specifying all properties in both of Fruit and StoreItem works!
+    return {
+        pricePerUnit: 15,
+        name: "apple",
+        arrivalDate: new Date(),
+        supplier: "fresh farm ltd.",
+    };
+}
+function giveFruitUnion() {
+    // this does not work!
+    // return {};
+    // this does not work!
+    // return {
+    //   pricePerUnit: 20;
+    // }
+    // this does not work!
+    // return {
+    //   arrivalDate: new Date();
+    //   pricePerUnit: 20;
+    // }
+    // this works!
+    // return {
+    //   pricePerUnit: 15,
+    //   name: "apple",
+    // };
+    // this works!
+    // return {
+    //   pricePerUnit: 15,
+    //   name: "apple",
+    //   arrivalDate: new Date(),
+    // };
+    // this works!
+    // return {
+    //   name: "apple",
+    //   arrivalDate: new Date(),
+    //   supplier: "fresh farm ltd.",
+    // };
+    // this works!
+    return {
+        pricePerUnit: 15,
+        name: "apple",
+        arrivalDate: new Date(),
+        supplier: "fresh farm ltd.",
+    };
+}
