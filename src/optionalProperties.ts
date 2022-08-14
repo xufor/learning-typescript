@@ -7,7 +7,8 @@ let bike: {
   modelName: "Alto 800",
 };
 
-// console.log(`The bike is electronic: ${bike.brandName.charAt(5)}`); TS is sad at this line!
+// TS is sad at this line!
+// console.log(`The bike is electronic: ${bike.brandName.charAt(5)}`);
 
 if (typeof bike.brandName !== "undefined") {
   // when using this type gaurd, TS is happy!
